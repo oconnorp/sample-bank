@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
   })
 
 // make this a config variable and move the tiken out of the version control
-var token = "EAACVh9jQIckBAMdZA0oeSd131xtdseZCWD7PKqZAqgCL2QZAt9SdJrPjx0b5oaZChpZC4rqCGugr8PWVz6ebPE3uWCtOdRUn9Gn0hm2dLDolsiB3xAJaaF2czq5zAHHEBUMwE49VuZAGb5K6TrjkfeIlmbZAcS3SJZAL06ORcnyAWRQZDZD";
+var token = "EAACVh9jQIckBABZBKFwtQ7tr043ee2ZAkGFq8TZAHj20RxQYZAWZCKBHX18IGHQyGZBfZB0vU9K3y5vO91n67e0RSvPSAhxcT7eUkbLsMqnsNAzZCCxIHZAZBNkHmNUboF38UuhMEvlt2f39H46eVZAzZBdlnUMNUN2oZC0WQXzUM2BZBpZAgZDZD";
 
 
 function sendTextMessage(sender, text) {
