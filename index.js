@@ -31,14 +31,14 @@ app.post('/webhook/', function (req, res) {
     for (i = 0; i < messaging_events.length; i++) {
       event = req.body.entry[0].messaging[i]
       sender = event.sender.id
-      if (event.message && event.message.text) {
+     /* if (event.message && event.message.text) {
         let text = event.message.text
         if (text === 'accounts') {
             sendAccountsMessage(sender)
             continue;
         }
         sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
-      }
+      } */
       if (event.postback) {
         let text = JSON.stringify(event.postback)
         sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)
@@ -71,7 +71,7 @@ function sendTextMessage(sender, text) {
     });
 }
 
-function sendAccountsMessage(sender) {
+/* function sendAccountsMessage(sender) {
     messageData = {
         "attachment": {
             "type": "template",
@@ -85,7 +85,8 @@ function sendAccountsMessage(sender) {
                         "type": "postback",
                         "title": "details",
                         "payload": "Next bubble with all cash accounts"
-                    }]},
+                    }
+                    ]},
                     {
                          "title": "credit accounts",
                          "subtitle": "available credit: $125,000",
@@ -113,7 +114,7 @@ function sendAccountsMessage(sender) {
             console.log('Error: ', response.body.error)
         }
     })
-}
+} */
 
 // Spin up the server
 app.listen(app.get('port'), function() {
