@@ -19,7 +19,6 @@ const
   request = require('request');
 
 //Set environment variables for testing
-process.env.PORT = "8080";
 process.env.MESSENGER_APP_SECRET = "testsecret";
 process.env.MESSENGER_PAGE_ACCESS_TOKEN = "testpagetoken";
 process.env.MESSENGER_VALIDATION_TOKEN = "testvalidationtoken";
@@ -53,7 +52,7 @@ const PAGE_ACCESS_TOKEN = (process.env.MESSENGER_PAGE_ACCESS_TOKEN) ?
   config.get('pageAccessToken');
 
 // URL where the app is running (include protocol). Used to point to scripts and 
-// assets located at this address. 
+// assets located at this address. git 
 const SERVER_URL = (process.env.SERVER_URL) ?
   (process.env.SERVER_URL) :
   config.get('serverURL');
