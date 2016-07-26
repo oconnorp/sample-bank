@@ -18,6 +18,13 @@ const
   https = require('https'),  
   request = require('request');
 
+//Set environment variables for testing
+process.env.PORT = "8080";
+process.env.MESSENGER_APP_SECRET = "testsecret";
+process.env.MESSENGER_PAGE_ACCESS_TOKEN = "testpagetoken";
+process.env.MESSENGER_VALIDATION_TOKEN = "testvalidationtoken";
+process.env.SERVER_URL = "https://sample-bank-pmoc.c9users.io";
+
 var app = express();
 app.set('port', process.env.PORT || 5000);
 app.set('view engine', 'ejs');

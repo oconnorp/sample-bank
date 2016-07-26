@@ -1,7 +1,6 @@
 {
-    "appSecret": "cd72a93f0a4197093b449949a8862202",
-    "pageAccessToken": "EAACVh9jQIckBAPMZBbyDPxJUc4PgYLKb4nZCJrTeLr6eMYT2mhdoapaou6DAxmKNkdt7YFSQAdsLI3up5RUfjXIeWwZBrYUXPArnTQ0n5CBxBuYO1ntPKniogDbvFZCcr5o9uFu4nuTgUqoRy7ZCZC6xcxDwnG36d4FLas8neOlQZDZD",
-    "validationToken": "my_voice_is_my_password_verify_me",
-    "serverURL": "https://sample-bank-pmoc.c9users.io" 
-    /* "https://sample-bank.herokuapp.co/" */
+    "appSecret": "",
+    "pageAccessToken": "",
+    "validationToken": "",
+    "serverURL":""
 }
