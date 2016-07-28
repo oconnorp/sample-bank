@@ -19,10 +19,10 @@ const
   request = require('request');
 
 //Set environment variables for testing
-//process.env.MESSENGER_APP_SECRET = "testsecret";
-//process.env.MESSENGER_PAGE_ACCESS_TOKEN = "testpagetoken";
-//process.env.MESSENGER_VALIDATION_TOKEN = "testvalidationtoken";
-//process.env.SERVER_URL = "https://sample-bank-pmoc.c9users.io";
+process.env.MESSENGER_APP_SECRET = "testsecret";
+process.env.MESSENGER_PAGE_ACCESS_TOKEN = "testpagetoken";
+process.env.MESSENGER_VALIDATION_TOKEN = "testvalidationtoken";
+process.env.SERVER_URL = "https://sample-bank-pmoc.c9users.io";
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
@@ -555,8 +555,8 @@ function sendButtonMessage(recipientId) {
           text: "This is test text",
           buttons:[{
             type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
+            url: "https://www.bankofthewest.com/",
+            title: "Bank of the West site"
           }, {
             type: "postback",
             title: "Trigger Postback",
@@ -589,13 +589,13 @@ function sendGenericMessage(recipientId) {
         payload: {
           template_type: "generic",
           elements: [{
-            title: "rift",
-            subtitle: "Next-generation virtual reality",
-            item_url: "https://www.oculus.com/en-us/rift/",               
+            title: "Checking Account",
+            subtitle: "Balance: $500.01",
+            item_url: "http://www.bankofthewest.com/",               
             image_url: SERVER_URL + "/assets/rift.png",
             buttons: [{
               type: "web_url",
-              url: "https://www.oculus.com/en-us/rift/",
+              url: "https://www.bankofthewest.com/",
               title: "Open Web URL"
             }, {
               type: "postback",
